@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ded4d4;
+}
+
+.container {
+    position: relative;
+    min-width: 300px;
+    min-height: 400px;
+    background: #5d5555;
+    padding: 40px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 25px 25px 75px #3e3636, 10px 10px 70px #3e3636, inset -5px -5px 15px #1d1717, inset 5px 5px 15px #1d1717;
+}
+
+.calculator {
+    position: relative;
+    display: grid;
+}
+
+.calculator .value {
+    position: relative;
+    grid-column: span 4;
+    border: none;
+    height: 100%;
+    left: 10px;
+    width: calc(100% - 20px);
+    outline: none;
+    background: #999090;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px #3e3636;
+    text-align: right;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.calculator span {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    background: linear-gradient(180deg, #3e3636, #5d5555);
+    box-shadow: inset -8px 0 8px #716868, inset 0 -8px 8px #5d5555, 0 0 0 2px #3e3636, 10px 20px 25px #1d1717;
+    color: #fff6f6;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.calculator span::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    bottom: 14px;
+    right: 12px;
+    background: linear-gradient(90deg, #3e3636, #5d5555);
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px #1d1717, 10px 5px 10px #3e3636;
+    border-left: 1px solid #1d1717;
+    border-bottom: 1px solid #1d1717;
+    border-top: 1px solid #1d1717;
+}
+
+.calculator span:active {
+    filter: brightness(1.5);
+}
+
+.calculator span i {
+    position: relative;
+    font-style: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.calculator .clear {
+    grid-column: span 2;
+    width: 180px;
+    background: #906e74;
+}
+
+.calculator .clear::before {
+    background: linear-gradient(90deg, #594545, #8c6565);
+    border-left: 1px solid #716868;
+    border-bottom: 1px solid #716868;
+    border-top: 1px solid #5d5555;
+}
+
+.calculator .equal {
+    background: #906e74;
+}
+
+.calculator .equal::before {
+    background: linear-gradient(90deg, #594545, #8c6565);
+    border-left: 1px solid #716868;
+    border-bottom: 1px solid #716868;
+    border-top: 1px solid #585555;
+}
+
+.calculator .slash {
+    background: #906e74;
+}
+
+.calculator .slash::before {
+    background: linear-gradient(90deg, #594545, #8c6565);
+    border-left: 1px solid #716868;
+    border-bottom: 1px solid #716868;
+    border-top: 1px solid #585555;
+}
+
+.calculator .multiply {
+    background: #906e74;
+}
+
+.calculator .multiply::before {
+    background: linear-gradient(90deg, #594545, #8c6565);
+    border-left: 1px solid #716868;
+    border-bottom: 1px solid #716868;
+    border-top: 1px solid #585555;
+}
+
+.calculator .add {
+    background: #906e74;
+}
+
+.calculator .add::before {
+    background: linear-gradient(90deg, #594545, #8c6565);
+    border-left: 1px solid #716868;
+    border-bottom: 1px solid #716868;
+    border-top: 1px solid #585555;
+}
+
+.calculator .subtract {
+    background: #906e74;
+}
+
+.calculator .subtract::before {
+    background: linear-gradient(90deg, #594545, #8c6565);
+    border-left: 1px solid #716868;
+    border-bottom: 1px solid #716868;
+    border-top: 1px solid #585555;
+}
+
+.calculator .decimal {
+    background: #906e74;
+}
+
+.calculator .decimal::before {
+    background: linear-gradient(90deg, #594545, #8c6565);
+    border-left: 1px solid #716868;
+    border-bottom: 1px solid #716868;
+    border-top: 1px solid #585555;
+}
